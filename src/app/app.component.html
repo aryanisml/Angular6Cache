@@ -1,0 +1,12 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+<button (click)="Show()">Show</button>
+
+<ul>
+  <li *ngFor="let joke of jokes$ | async">
+      {{joke.joke}}
+  </li>
+</ul>
